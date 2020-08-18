@@ -1,0 +1,59 @@
+{
+  "name": "form-mono-repo",
+  "author": {
+    "name": "Mark Phillips"
+  },
+  "license": "MIT",
+  "private": "true",
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "build": "lerna run build --parallel",
+    "test": "CI=true lerna run test --parallel",
+    "typecheck": "lerna run typecheck --parallel",
+    "lint": "lerna run lint --parallel",
+    "lint:fix": "lerna run lint:fix --parallel",
+    "clean": "lerna clean",
+    "clean:update": "lerna clean && lerna bootstrap",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@storybook/addon-actions": "^6.0.12",
+    "@storybook/addon-essentials": "^6.0.12",
+    "@storybook/addon-links": "^6.0.12",
+    "@storybook/node-logger": "^6.0.12",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^6.0.12",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^9.0.0",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.5",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "@types/styled-components": "^5.1.2",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "lerna": "^3.20.2",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
+    "react-scripts": "3.4.0",
+    "styled-components": "^5.1.1",
+    "ts-loader": "^8.0.2",
+    "typescript": "~3.7.2"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "dependencies": {}
+}
