@@ -40,7 +40,14 @@
     "prettier": "^2.0.5",
     "ts-jest": "^26.2.0",
     "ts-loader": "^8.0.2",
-    "typescript": "^3.9.7"
+    "typescript": "^3.9.7",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "workspaces": {
     "packages": [

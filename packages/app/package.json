@@ -1,0 +1,23 @@
+{
+  "name": "@form/app",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "scripts": {
+    "build": "webpack -p --env=prod",
+    "start": "webpack-dev-server --open",
+    "check:types": "tsc -p tsconfig.json",
+    "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
+    "lint:fix": "eslint --fix . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx"
+  },
+  "dependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "styled-components": "^5.1.1"
+  },
+  "devDepencies": {
+    "@form/components": "1.0.0",
+    "@form/conmon": "1.0.0"
+  }
+}
