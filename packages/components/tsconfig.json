@@ -25,7 +25,8 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src",
+    "setUpTests.ts",
   ],
   "exclude": [
     "**/node_modules/**",

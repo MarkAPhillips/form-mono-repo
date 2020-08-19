@@ -8,14 +8,10 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "simple-import-sort"
-  ],
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
   "extends": [
     "prettier",
     "prettier/react",
-    "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
     "prettier/@typescript-eslint",
@@ -43,5 +39,6 @@
     "browser": true,
     "node": true,
     "jest": true
-  }
+  },
+  "settings": { "react": { "version": "detect" } }
 }

@@ -8,7 +8,7 @@
   "scripts": {
     "start": "tsc -p tsconfig.json -w",
     "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json",
+    "check:types": "tsc -p tsconfig.json",
     "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "eslint --fix . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx"
   }
