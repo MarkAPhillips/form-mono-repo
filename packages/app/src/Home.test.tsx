@@ -5,6 +5,6 @@ import Home from './Home';
 
 test('renders learn react link', () => {
   render(<Home />);
-  const linkElement = screen.getByText(/get more info on create react app/i);
-  expect(linkElement).toBeInTheDocument();
+  const inputElement = screen.getByRole(/textbox/i);
+  expect(inputElement).toBeInTheDocument();
 });
