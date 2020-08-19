@@ -1,9 +1,6 @@
 {
   "name": "@form/app",
   "version": "1.0.0",
-  "author": {
-    "name": "Mark Phillips"
-  },
   "private": false,
   "scripts": {
     "start": "react-scripts start",

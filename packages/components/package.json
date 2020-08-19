@@ -1,10 +1,6 @@
 {
   "name": "@form/components",
   "version": "1.0.0",
-  "author": {
-    "name": "Mark Phillips"
-  },
-  "private": false,
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {

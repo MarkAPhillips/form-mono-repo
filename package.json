@@ -1,9 +1,5 @@
 {
   "name": "form-mono-repo",
-  "author": {
-    "name": "Mark Phillips"
-  },
-  "license": "MIT",
   "private": "true",
   "scripts": {
     "start": "lerna run start --parallel",
@@ -31,7 +27,6 @@
     "@types/jest": "^25.2.1",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
-    "babel-loader": "^8.1.0",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
