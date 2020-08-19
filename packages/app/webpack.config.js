@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const config = {
   entry: ["./src/index.tsx"],
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build"),
     filename: "bundle.js",
     globalObject: "this",
     publicPath: "/",
@@ -47,7 +47,7 @@ const config = {
     extensions: [".js", ".jsx", ".tsx", ".ts"],
   },
   devServer: {
-    contentBase: "./dist",
+    contentBase: "./build",
     publicPath: "/",
     historyApiFallback: true,
   },
