@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
-    "build": "webpack -p --env=prod",
+    "build": "webpack -p",
     "start": "webpack-dev-server --open",
     "check:types": "tsc -p tsconfig.json",
     "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",
@@ -17,7 +17,6 @@
     "styled-components": "^5.1.1"
   },
   "devDepencies": {
-    "@form/components": "1.0.0",
-    "@form/conmon": "1.0.0"
+    "@form/components": "1.0.0"
   }
 }
