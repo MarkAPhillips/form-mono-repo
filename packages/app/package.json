@@ -12,11 +12,18 @@
     "lint:fix": "eslint --fix . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx"
   },
   "dependencies": {
+    "lodash": "^4.17.20",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-hook-form": "^6.4.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "reselect": "^4.0.0",
     "styled-components": "^5.1.1"
   },
-  "devDepencies": {
+  "devDependencies": {
     "@form/components": "1.0.0"
   }
 }
