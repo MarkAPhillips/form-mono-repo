@@ -1,6 +1,6 @@
 {
   "name": "@form/app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "build/index.js",
   "typings": "build/index.d.ts",
@@ -24,6 +24,6 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "@form/components": "1.0.0"
+    "@form/components": "^1.0.1"
   }
 }
