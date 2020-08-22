@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import { FieldDecorator } from '../FieldDecorator/FieldDecorator';
 import { Input } from './InputText.styles';
 import { InputTextProps } from './InputText.types';
 
-export const InputText = ({ label, name, errorMessage, isOptional, ...props }: InputTextProps) => (
+type Ref = HTMLInputElement;
+
+export const InputText = forwardRef<Ref, InputTextProps>(({ label, name, errorMessage, isOptional, maxLength = 50 }: InputTextProps, ref) => (
   <FieldDecorator
     label={label}
     name={name}
@@ -15,8 +17,11 @@ export const InputText = ({ label, name, errorMessage, isOptional, ...props }: I
       type="text"
       name={name}
       id={name}
-      {...props}
+      ref={ref}
+      maxLength={maxLength}
     />
   </FieldDecorator>
-);
+));
+
+InputText.displayName="InputText";
 

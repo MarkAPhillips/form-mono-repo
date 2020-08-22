@@ -3,4 +3,5 @@ export type InputTextProps = {
   name: string;
   errorMessage? : string;
   isOptional?: boolean;
+  maxLength?: number;
 }

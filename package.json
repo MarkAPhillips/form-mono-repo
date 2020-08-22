@@ -9,7 +9,7 @@
     "lint": "lerna run lint --parallel",
     "lint:fix": "lerna run lint:fix --parallel",
     "clean": "lerna clean",
-    "clean:update": "lerna clean && lerna bootstrap",
+    "clean:update": "lerna clean && lerna bootstrap --force-local",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
