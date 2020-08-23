@@ -5,6 +5,8 @@ const formTypes = ['l1', 'l2', 'sq'];
 
 const gender = ['Female', 'Male'];
 
+const yesno = [{ "label": "Yes", "value": "yes", "id": "yes" }, { "label": "No", "value": "no", "id": "no" }];
+
 const countries = ['United Kingdom',
   'Other',
   'Afghanistan',
@@ -805,5 +807,5 @@ const counties = ['Other',
   'Yorkshire'];
 
 export {
-  countries, nationalities, titles, counties, formTypes, gender,
+  countries, nationalities, titles, counties, formTypes, gender, yesno,
 };

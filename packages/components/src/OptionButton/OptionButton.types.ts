@@ -9,7 +9,7 @@ export type OptionButtonProps = {
   options: OptionButtonOption [];
   isOptional?: boolean;
   label: string;
-  errorMessage: string;
+  errorMessage?: string;
 }
 
 export type OptionButtonRef = HTMLInputElement;

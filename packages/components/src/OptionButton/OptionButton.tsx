@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { forwardRef, Fragment } from 'react';
 
 import { FieldErrorMessage } from '../FieldErrorMessage/FieldErrorMessage';
 import { FieldLabel } from '../FieldLabel/FieldLabel';
@@ -11,10 +11,10 @@ export const OptionButton = forwardRef<OptionButtonRef, OptionButtonProps>(({ na
       <FieldLabel fieldType="radio" isOptional={isOptional} label={label} name={name} />
       <OptionButtonContainer>
         {options.map((item) => (
-          <>
+          <Fragment key={item.id}>
             <Input type="radio" id={item.id} name={name} value={item.value} ref={ref} />
             <Label htmlFor={item.id}>{item.label}</Label>
-          </>
+          </Fragment>
         ))}
       </OptionButtonContainer>
       {errorMessage && <FieldErrorMessage errorMessage={errorMessage} />}
