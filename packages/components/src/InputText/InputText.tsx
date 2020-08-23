@@ -1,18 +1,13 @@
 import React, { forwardRef } from 'react';
 
-import { FieldDecorator } from '../FieldDecorator/FieldDecorator';
+import { FieldErrorMessage } from '../FieldErrorMessage/FieldErrorMessage';
+import { FieldLabel } from '../FieldLabel/FieldLabel';
 import { Input } from './InputText.styles';
-import { InputTextProps } from './InputText.types';
+import { InputTextProps, InputTextRef } from './InputText.types';
 
-type Ref = HTMLInputElement;
-
-export const InputText = forwardRef<Ref, InputTextProps>(({ label, name, errorMessage, isOptional, maxLength = 50 }: InputTextProps, ref) => (
-  <FieldDecorator
-    label={label}
-    name={name}
-    errorMessage={errorMessage}
-    isOptional={isOptional}
-  >
+export const InputText = forwardRef<InputTextRef, InputTextProps>(({ label, name, errorMessage, isOptional, maxLength = 50 }: InputTextProps, ref) => (
+  <>
+    <FieldLabel fieldType="text" label={label} isOptional={isOptional} name={name} />
     <Input
       type="text"
       name={name}
@@ -20,8 +15,9 @@ export const InputText = forwardRef<Ref, InputTextProps>(({ label, name, errorMe
       ref={ref}
       maxLength={maxLength}
     />
-  </FieldDecorator>
+    {errorMessage && <FieldErrorMessage errorMessage={errorMessage} />}
+  </>
 ));
 
-InputText.displayName="InputText";
+InputText.displayName = "InputText";
 

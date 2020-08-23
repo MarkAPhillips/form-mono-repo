@@ -5,3 +5,5 @@ export type InputTextProps = {
   isOptional?: boolean;
   maxLength?: number;
 }
+
+export type InputTextRef = HTMLInputElement

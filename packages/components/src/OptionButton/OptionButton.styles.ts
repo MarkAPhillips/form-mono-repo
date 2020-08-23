@@ -35,8 +35,14 @@ export const Input = styled.input`
   }
 `;
 
-export const SwitchButtonContainer = styled.div`
+export const OptionButtonContainer = styled.div`
   display: flex;
   overflow: hidden;
+`;
+
+export const FieldSet = styled.fieldset`
+  border: none;
+  padding: 0;
+  margin: 0;
 `;
 
