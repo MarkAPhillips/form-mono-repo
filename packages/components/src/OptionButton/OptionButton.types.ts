@@ -5,11 +5,12 @@ type OptionButtonOption = {
 }
 
 export type OptionButtonProps = {
-  name: string;
   options: OptionButtonOption [];
+  name: string;
   isOptional?: boolean;
   label: string;
   errorMessage?: string;
-}
+  defaultValue?: string;
+};
 
 export type OptionButtonRef = HTMLInputElement;

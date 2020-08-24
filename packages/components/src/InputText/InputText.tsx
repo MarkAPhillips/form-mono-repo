@@ -5,7 +5,7 @@ import { FieldLabel } from '../FieldLabel/FieldLabel';
 import { Input } from './InputText.styles';
 import { InputTextProps, InputTextRef } from './InputText.types';
 
-export const InputText = forwardRef<InputTextRef, InputTextProps>(({ label, name, errorMessage, isOptional, maxLength = 50 }: InputTextProps, ref) => (
+export const InputText = forwardRef<InputTextRef, InputTextProps>(({ label, errorMessage, isOptional, ...props }: InputTextProps, ref) => (
   <>
     <FieldLabel fieldType="text" label={label} isOptional={isOptional} name={name} />
     <Input
@@ -13,7 +13,7 @@ export const InputText = forwardRef<InputTextRef, InputTextProps>(({ label, name
       name={name}
       id={name}
       ref={ref}
-      maxLength={maxLength}
+      {...props}
     />
     {errorMessage && <FieldErrorMessage errorMessage={errorMessage} />}
   </>

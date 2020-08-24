@@ -3,9 +3,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const config = {
   entry: ["./src/index.tsx"],
+  devtool: 'eval-source-map',
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
+    chunkFilename: '[name].bundle.js',
     globalObject: "this",
     publicPath: "/",
   },

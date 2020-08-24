@@ -1,8 +1,6 @@
 // Reference data used in select options
 const titles = ['Miss', 'Mr', 'Mrs', 'Ms', 'N/K', 'Other'];
 
-const formTypes = ['l1', 'l2', 'sq'];
-
 const gender = ['Female', 'Male'];
 
 const yesno = [{ "label": "Yes", "value": "yes", "id": "yes" }, { "label": "No", "value": "no", "id": "no" }];
@@ -807,5 +805,5 @@ const counties = ['Other',
   'Yorkshire'];
 
 export {
-  countries, nationalities, titles, counties, formTypes, gender, yesno,
+  countries, nationalities, titles, counties, gender, yesno,
 };

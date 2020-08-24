@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "typings": "build/index.d.ts",
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack -p --devtool source-map",
     "start": "webpack-dev-server --open",
     "check:types": "tsc -p tsconfig.json",
     "lint": "eslint . --ignore-path ../../.eslintignore --ext ts --ext tsx --ext js --ext jsx",

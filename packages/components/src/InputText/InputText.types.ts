@@ -1,9 +1,7 @@
 export type InputTextProps = {
   label: string;
-  name: string;
   errorMessage? : string;
   isOptional?: boolean;
-  maxLength?: number;
-}
+} & React.InputHTMLAttributes<HTMLInputElement>
 
 export type InputTextRef = HTMLInputElement
